@@ -1,6 +1,6 @@
 // some kind of stylized landing(home) page here
 import React from 'react'
-import Pics from './components/Pics'
+import Pics from './Pics'
 
 const Main = () => {
     return (
