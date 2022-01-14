@@ -6,6 +6,7 @@ import {
     Card, 
     Button,
     Layout,
+    TextField,
 } from '@shopify/polaris';
 
 const Pic = ({data}) => {
@@ -19,9 +20,14 @@ const Pic = ({data}) => {
             <img className="main-img" src={data.url} alt="" />
             <div className="details">
                 {/* <h3 className="title">{data.title}</h3> */}
-                <p className="date">{data.date}</p>
+                <TextField
+                    value={data.date}
+                    label="Date Taken:"
+                    placeholder="Date"
+                />
+                {/* <p className="date">{data.date}</p> */}
                 <Button primary onClick={(e) => setLike("Liked")}>{like}</Button>
-                <Button primary onClick={(e) => setLove("Loved")}>{love}</Button>
+                <Button destructive onClick={(e) => setLove("Loved")}>{love}</Button>
             </div>
         </div>
     </Card>
