@@ -5,8 +5,10 @@ import '../styles/Pic.css';
 import {
     Card, 
     Button,
+    ButtonGroup,
     Layout,
     Caption,
+    Stack,
 } from '@shopify/polaris';
 
 const Pic = ({data}) => {
@@ -16,18 +18,20 @@ const Pic = ({data}) => {
     return (
         <Layout.Section>
         <Card title={data.title} sectioned subdued>
-            <div className="flic">
+            <Card.Section>
             <img className="main-img" src={data.url} alt="" />
-            <div className="details">
+            <Stack distribution="center">
+                <ButtonGroup>
                 <Button primary size="slim" onClick={(e) => setLike("Liked")}>{like}</Button>
                 <Button destructive size="slim" onClick={(e) => setLove("Loved")}>{love}</Button>
-                </div>
-                <div className="date">
+                </ButtonGroup>
+            </Stack>
+            <Stack spacing="baseTight">
                 <Caption>Date Taken: {data.date}</Caption>
-                </div>
-        </div>
-    </Card>
-</Layout.Section>
+            </Stack>
+            </Card.Section>
+        </Card>
+        </Layout.Section>
     )
 }
 
