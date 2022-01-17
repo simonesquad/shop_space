@@ -4,23 +4,34 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import { useState } from "react";
 import '../styles/Pic.css';
 import {
     Card, 
-    Button,
-    ButtonGroup,
     Layout,
     Caption,
     Stack,
+    MediaCard,
 } from '@shopify/polaris';
 
 const Pic = ({data}) => {
-    const [like, setLike] = useState("like");
-    const [love, setLove] = useState("love");
 
     return (
-        <Layout.Section>
+        <Layout.Section oneHalf>
+            {/* <MediaCard
+                title={data.title}
+                description={data.date}
+            >
+            <img
+                alt=""
+                width="100%"
+                height="100%"
+                style={{
+                    objectFit: 'cover'
+                    // objectPosition: 'center',
+                }}
+                src={data.url}
+                />
+            </MediaCard> */}
         <Card title={data.title} sectioned subdued>
             <Card.Section>
             <img className="main-img" src={data.url} alt="" />

@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+.whole {
+    width: 75vw;
+}
+
 .main-img {
     height: 50vh;
     width: 65vw;
