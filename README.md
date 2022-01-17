@@ -7,3 +7,5 @@ Built using:
 3. Material UI
 
 Simple exercise to test out the NASA APOD API and render some pretty pictures. Thanks Shopify for this fun intake!
+
+Deployed link here: https://shop-space-qefxs80le-simonesquad.vercel.app/
