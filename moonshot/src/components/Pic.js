@@ -17,21 +17,6 @@ const Pic = ({data}) => {
 
     return (
         <Layout.Section oneHalf>
-            {/* <MediaCard
-                title={data.title}
-                description={data.date}
-            >
-            <img
-                alt=""
-                width="100%"
-                height="100%"
-                style={{
-                    objectFit: 'cover'
-                    // objectPosition: 'center',
-                }}
-                src={data.url}
-                />
-            </MediaCard> */}
         <Card title={data.title} sectioned subdued>
             <Card.Section>
             <img className="main-img" src={data.url} alt="" />
