@@ -4,6 +4,7 @@ import Pics from './Pics'
 import '../styles/Main.css'
 import {
     FooterHelp,
+    Heading,
     Link,
 } from '@shopify/polaris';
 
@@ -11,7 +12,7 @@ const Main = () => {
     return (
         <div>
             <div className="header">
-                <h2>Journey through the Starzzzz</h2>
+            <Heading>Welcome to the Stars</Heading>
             </div>
             <Pics />
             <FooterHelp>
